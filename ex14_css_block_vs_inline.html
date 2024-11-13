@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Block vs Inline</title>
+        <style>
+            .one {
+                display: inline;
+                border-style: solid;
+                border-color: red;
+                text-align: center;
+                margin: 10px;
+                padding: 10px;
+                background-color:#eadfdf;
+            }
+            .two {
+                display: block;
+                border-style: solid;
+                border-color: red;
+                text-align: center;
+                margin: 10px;
+                padding: 10px;
+                background-color:#eadfdf;
+            }
+            span {
+                display: block;
+            }        
+        </style>
+        
+    </head>
+    <body>
+        <h1>Inline vs. Block</h1>
+        <div>
+            <p class="one">inline 1</p>
+            <p class="one">inline 2</p>
+            <p class="one">inline 3</p>
+        </div>
+        <div>
+            <p class="two">block 1</p>
+            <p class="two">block 2</p>
+            <p class="two">block 3</p>
+        </div> 
+        <span>one</span>
+        <span>two</span>
+        <span>three</span>
+    </body>
+</html>

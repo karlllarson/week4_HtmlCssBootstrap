@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>HTML Form</title>
+        <script>
+            function handleClick() {
+                const fname = document.getElementById('fname').value;
+                const lname = document.getElementById('lname').value;
+                alert(`first=${fname}, last=${lname}`);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Forms</h1>
+        <h2>GET</h2>
+        <form method="GET" action="http://localhost:3000/processform">
+            <div>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" />
+            </div>
+            <div>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" />
+            </div> 
+            <p />
+            <div>
+                <input type="button" onclick="handleClick()"  value="Goto handleClick" />
+                <input type="submit" value="Send GET" />
+            </div> 
+        </form>
+        <h2>POST</h2>
+        <form method="POST" action="http://localhost:3000/processform">
+            <div>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" />
+            </div>
+            <div>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" />
+            </div> 
+            <p />
+            <div>
+                <input type="submit" value="Send POST" />
+            </div> 
+        </form>
+    </body>
+</html>

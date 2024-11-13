@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>HTML Form</title>
+    </head>
+    <body>
+        <h1>Form</h1>
+        <form method="GET" action="http://localhost:3000/processform">
+            <div>
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname" />
+            </div>
+            <div>
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname" />
+            </div>
+            <p />
+            <div>  
+                <div>Colors:</div>
+                <label for="color_red">Red</label>
+                <input type="checkbox" id="color_red" name="color_red" value="red" />
+                <label for="color_blue">Blue</label>
+                <input type="checkbox" id="color_blue" name="color_blue" value="blue" />
+                <label for="color_green">Green</label>
+                <input type="checkbox" id="color_green" name="color_green" value="green" />
+            </div>
+            <p />
+            <div>
+                <div>Like:</div>
+                <input type="radio" id="like_yes" name="like" value="yes" />
+                <label for="like_yes">Yes</label>
+                <input type="radio" id="like_no" name="like" value="no" />
+                <label for="like_no">No</label>
+            </div>
+            <p />
+            <div>
+                <div>Notes:</div>
+                <textarea id="notes" name="notes" rows="5" cols="50"></textarea>
+            </div>
+            <p />
+            <div>
+                <input type="submit" value="Click Me" />
+            </div> 
+            </form>
+    </body>
+</html>

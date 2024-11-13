@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Internal CSS</title>
+        <style>
+            .one {
+                border-style: solid;
+                border-color: red;
+                text-align: center;
+                margin: 10px;
+                padding: 10px;
+                background-color:#636363;
+
+            }
+            #fname {
+                font-family: Tahoma, Geneva, sans-serif;
+            }
+            table { border-collapse: collapse; font-family: Tahoma, Geneva, sans-serif; }
+            table th { text-align: left; padding: 15px; }
+            table td { padding: 15px; }
+            table thead td { background-color: #54585d; color: #ffffff; font-weight: bold; font-size: 13px; border: 1px solid #54585d; }
+            table tbody td { color: #636363; border: 1px solid #dddfe1; }
+            table tbody tr { background-color: #f9fafb; }
+            table tbody tr:nth-child(odd) { background-color: #ffffff; }             
+        </style>
+    </head>
+    <body>
+        <h1>Internal CSS</h1>
+        <p class="one">p one</p>
+        <p>p two</p>
+
+        <div class="one">div one</div>
+        <div>div two</div>
+        <div>
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="fname" />
+        </div>        
+        <div>
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="lname" />
+        </div>
+        <div>
+            <table>
+                <tr><th>Alpha</th><th>Beta</th><th>Gamma</th></tr>
+                <tr><td>A</td><td>B</td><td>C</td></tr>
+                <tr><td>D</td><td>E</td><td>F</td></tr>
+                <tr><td>G</td><td>H</td><td>I</td></tr>
+            </table>
+        </div>
+    </body>
+</html>

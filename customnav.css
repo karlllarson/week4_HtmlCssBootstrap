@@ -1,0 +1,33 @@
+nav li {
+    font-size: 22px;
+  }
+  
+  .carousel-item {
+    text-shadow: 2px 2px #000000;
+  }
+  
+  .port-image {
+    width: 100%;
+  }
+  
+  .gallery_product {
+   margin-bottom: 30px;
+  
+  }
+  
+  .contact-ul li {
+     font-size: 24px;
+     list-style-type: none;
+  }
+  
+  
+  /* MEDIA QUERIES */
+  
+  @media (max-width: 768px) { 
+  
+  .logo {
+      width: 70%;
+      height: auto;
+  }
+  
+  }

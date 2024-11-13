@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Contextual, Direct and Adjacent</title>
+        <style>
+            h3, h4, h5, h6 { color: blue; }
+            ul strong { color: red;}
+            div > strong { color: purple;}
+            P + strong { color: green;}
+        </style>
+        
+    </head>
+    <body>
+        <h1>Or</h1>
+        <div>
+            <h3>H3</h3>  
+            <p />          
+            <h5>H5</h5>            
+        </div>
+        <h1>Contextual</h1>
+        <div>
+            <ul>
+                <li>one (ul->li)</li>
+                <li><strong>two (ul->li->strong)</strong></li>
+                <li>three (ul->li)</li>
+                <li><strong>four (ul->li->strong)</strong></li>
+            </ul>
+        </div>
+        <h1>Direct Child</h1>
+        <div><strong>five (div->strong)</strong></div>
+        <div><span><strong>six (div->span->strong)</strong></span></div>
+        <div><strong>seven (div->strong)</strong></div>
+        <h1>Adjacent Element</h1>
+        <p>Paragraph</p>
+        <strong>Adjacent STRONG</strong>
+        <p>Paragraph</p>
+        <div>Div</div>
+        <strong>Non-Adjacent STRONG</strong>
+    </body>
+</html>
